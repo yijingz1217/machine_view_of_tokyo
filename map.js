@@ -191,7 +191,7 @@ var locationArray = [
 	+ "<br><br>"
 	+ "There also locates one big Tsutaya bookstore. I don’t really been there a lot, generally because Roppongi is kinds of crowded. But I like the atmosphere there and it the bookstore is really located at a nice place."
 	+ "<br><br>"
-	+ "Another place that I can remember deep of is the Azabujuban. It’s near Roppongi, but a lot more quite and less crowded. You can always find amazing restaurants and dessert shops there. ",
+	+ "Another place that I can remember deep of is the Azabujuban. It’s near Roppongi, but a lot more quiet and less crowded. You can always find amazing restaurants and dessert shops there. ",
 	
         machine: "Roppongi, located in the heart of Tokyo, is a vibrant and dynamic district that pulsates with energy day and night. As one of Tokyo's premier entertainment and nightlife hubs, Roppongi offers a diverse array of experiences that cater to a wide range of tastes and interests."
         + "<br><img src = \"image/roppongi_machine_1.png\" alt=\"Roppongi machine image1\" />"
