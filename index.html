@@ -27,12 +27,32 @@
             width: 50px;
             height: 65px;
         }
-        #button {
+        #button, #prefacebutton, #resultbutton {
             font-size: 14pt;
             font-family: sans-serif;
         }
         body {
             background-color: #05061b;
+        }
+        h2, #text {
+            margin:10px;
+            font-size: 18px;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        h1 {
+            margin: 10px;
+            font-size: 40px;
+            /* font-family: sans-serif; */
+            font-weight: lighter;
+            font-weight: bold;
+        }
+        img {
+            overflow-x: scroll;
+            overflow-y: scroll;
+            object-fit: cover;
+            width: 400px;
+            height: 250px;
         }
     </style>
 </head>
@@ -67,12 +87,13 @@
                 <option value="Akihabara">Akihabara</option>
                 <option value="Roppongi">Roppongi</option>
                 <option value="Ginza">Ginza</option>
-                <option value="Ueno">Ueno</option>
                 <option value="Home">Home</option>
             </select>
             <!-- </datalist>   -->
 
             <input id="button" type="button" onclick="search()" value="Search"/>
+            <input id="prefacebutton" type="button" onclick="show_preface()" value="Preface"/>
+            <input id="resultbutton"  type="button" onclick="show_result()" value="Result"/>
         </form>
 
         <img id="pin" src="none.png" alt="pin" onclick="pop()"/>
@@ -83,9 +104,45 @@
         <input id="close"  type="button" onclick="close_pop()"   value="X"/>
         <input id="switch" type="button" onclick="switch_button()" value="Switch to Machine"/>
 
-        <div id="text">
-            <p> word </p>
-        </div>
+        <!-- <h2 id="text"></h2> -->
+        <div id="text"></div>
+
+        <img src="none.png" alt="image">
+    </div>
+
+    <div id="preface" style="overflow-x: hidden; overflow-y:scroll;">
+        <h1> Preface </h1>
+        <h2> This is an interactive map comparing human and machine's view of Tokyo. The work is inspired by Perec Georges' "Species of Spaces". I am curious, if spaces is represented based on one's experience and memory, how different/similar human's and machine's expressions and virtualization of space can be. I will present my work mainly through text writings and images. </h2>
+        <h2> Reasons on why Tokyo? I actually thought of doing something about Madison, but then I found Madison is a bit hard to generate results for machine (definitely easier task for bigger cities). Then, to give machine fairness on familarity of the city, I did not choose the city Shanghai, where I grew up most of my life, but chose Tokyo instead, where my family spent some time living there. It would be easier for me to write on Tokyo as an outsider but also as someone who is more familar with the city. </h2>
+        <h2> Work specially designed for the creative project for course ENG140, SP2024 at the University of Wisconsin-Madison. Author: Yijing Zhang. </h2>
+        <h2> Consent: The part of machine thoughts utilizes generative AI to complete my work. Got permissions from instructors. </h2>
+
+        <h1> Instructions for the Map </h1>
+        <h2> 1) Try to open this page on a computer. </h2>
+        <h2> 2) Select different districts of Tokyo at the search bar, and click search. </h2>
+        <h2> 3) It will navigate to the location and display a writing and several pictures about my experience about Tokyo. </h2>
+        <h2> 4) To see machine's view of the same place, click on the "Switch to machine" button on the top right corner of the pop-up window. </h2>
+        <h2> 5) To return to my personal experience, click on the "Switch to reality" button at the same place. </h2>
+        <h2> 6) To close the pop-up window, click "X". </h2>
+        <h2> 7) Able to drag the map. Able to zoom in/out using the bottom right control center. </h2>
+        <h2> 8) To see this preface page again, click the "Preface" button next to the search box. </h2>
+        <h2> 9) To see this concluded results of comparison, click the "Result" bottom next to the "Preface" button. </h2>
+        <h2> 10) Please refresh the page after each window resize. </h2>
+        <h2> Enjoy! </h2>
+
+        <input id="closepreface" type="button" onclick="close_preface()" value="I read ALL, and CLOSE."/>
+    </div>
+
+    <div id="result" style="overflow-x: hidden; overflow-y:scroll;">
+        <h1> Result & Conclusion </h1>
+
+        <h2>In this experiment, I asked generative models to give me some results related to its memory and experience. We see from the generated results that the model does not actually differentiate between memory or experience on spaces. The descriptions are also not "personal", and even not factually correct (not every place is at the heart of Tokyo). </h2>
+
+        <h2>Even though current generative models can generate high-quality text and images (in terms of textual expressions and resolution), the real content of generated materials is very limited. Current generative models are generally lack of ability to generate materials in relation to memory and experience. </h2>
+
+        <h2>Current generative machine learning models are typically trained on large-scale datasets. They targeted on learn data distributions of the training data, and try to reproduce the data distribution for generated results. Seen from the process, this approach of modeling generative models are only mimicking data distribution, which does not and cannot infer any "personal" memeory and experience of machine. Our own experience and memory are never came from mimicking data distributions. This reminds me of a theory called computational theory of mind, which indicates that, for strong artificial intelligence to own its mind, only working on learning data distributions cannot be enough. More research required in the realm. </h2>
+
+        <input id="closeresult" type="button" onclick="close_result()" value="CLOSE"/>
     </div>
 </body>
 
