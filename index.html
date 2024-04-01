@@ -47,12 +47,19 @@
             font-weight: lighter;
             font-weight: bold;
         }
-        img {
+        .horizontal {
             overflow-x: scroll;
             overflow-y: scroll;
             object-fit: cover;
             width: 400px;
             height: 250px;
+        }
+        .vertical {
+            overflow-x: scroll;
+            overflow-y: scroll;
+            object-fit: cover;
+            width: 400px;
+            height: 400px;
         }
     </style>
 </head>
@@ -127,7 +134,7 @@
         <h2> 7) Able to drag the map. Able to zoom in/out using the bottom right control center. </h2>
         <h2> 8) To see this preface page again, click the "Preface" button next to the search box. </h2>
         <h2> 9) To see this concluded results of comparison, click the "Result" bottom next to the "Preface" button. </h2>
-        <h2> 10) Please refresh the page after each window resize. Do not use incognitive window.</h2>
+        <h2> 10) Please refresh the page after each window resize. </h2>
         <h2> Enjoy! </h2>
 
         <input id="closepreface" type="button" onclick="close_preface()" value="I read ALL, and CLOSE."/>
@@ -138,8 +145,10 @@
 
         <h2>In this experiment, I asked generative models to give me some results related to its memory and experience. We see from the generated results that the model does not actually differentiate between memory or experience on spaces. The descriptions are also not "personal", and even not factually correct (not every place is at the heart of Tokyo). </h2>
 
-        <h2>Even though current generative models can generate high-quality text and images (in terms of textual expressions and resolution), the real content of generated materials is very limited. Current generative models are generally lack of ability to generate materials in relation to memory and experience. </h2>
+        <h2>For me, I found my space descriptions based on my memory of locations in Tokyo are mainly based on my sense of experiences, such as taste. I think partially it is related to my current feeling and experience of studying aborad which I kinda miss eastern-style food. Yet, machine generated results does not contain emotional feeling from their aspect of writing. I also found that it is a bit hard for me to write about each place a lot, because the familarity of places kinds block my idea to write anything new about it. For some places, I am just not that familar. I cannot know well of everywhere in a city. But generation tasks are easy with almost no cost. You can ask machine to write as long as it can, but it does not contain anything emotionally meaningful. </h2>
 
+        <h2>Even though current generative models can generate high-quality text and images (in terms of textual expressions and resolution), the real content of generated materials is very limited. Current generative models are generally lack of ability to generate materials in relation to memory and experience. </h2>
+        
         <h2>Current generative machine learning models are typically trained on large-scale datasets. They targeted on learn data distributions of the training data, and try to reproduce the data distribution for generated results. Seen from the process, this approach of modeling generative models are only mimicking data distribution, which does not and cannot infer any "personal" memeory and experience of machine. Our own experience and memory are never came from mimicking data distributions. This reminds me of a theory called computational theory of mind, which indicates that, for strong artificial intelligence to own its mind, only working on learning data distributions cannot be enough. More research required in the realm. </h2>
 
         <input id="closeresult" type="button" onclick="close_result()" value="CLOSE"/>
