@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Human VS. Machine's view of Tokyo</title>
+    <script src="map.js" defer></script>
+
+    <style>
+        #sizebutton {
+            width: 48px;
+            height: 92px;
+        }
+        #up {
+            width: 65px;
+            height: 50px;
+        }
+        #down {
+            width: 65px;
+            height: 50px;
+        }
+        #left {
+            width: 50px;
+            height: 65px;
+        }
+        #right {
+            width: 50px;
+            height: 65px;
+        }
+        #button {
+            font-size: 14pt;
+            font-family: sans-serif;
+        }
+        body {
+            background-color: #05061b;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mapconsole">
+       <img id="map" style="position: relative;" src="map.gif" alt="map" />
+       <h1 id="welcome">  </h1>
+    </div>
+
+    <div id="controlCenter">
+        <img id = "up"    src = "up.png"    onclick="upper()"   alt="upbutton" />
+        <img id = "down"  src = "down.png"  onclick="downer()"  alt="downbutton" />
+        <img id = "left"  src = "left.png"  onclick="lefter()"  alt="leftbutton" />
+        <img id = "right" src = "right.png" onclick="righter()" alt="rightbutton" />
+
+        <img id = "sizebutton" src = "sizebutton.png" alt="sizebutton" />
+        <div id="larger" onclick="larger()"></div>
+        <div id="smaller" onclick="smaller()"></div>
+    </div>
+
+    <div id="searchCenter">
+        <form>
+            <!-- <input id="searchbox" type="text" name="location" /> -->
+            <!-- <datalist id="searchbox"> -->
+            <select id="searchbox" placeholder="Pick a location">
+                <option value="">Pick a location</option>
+                <option value="Ikebukuro">Ikebukuro</option>
+                <option value="Shinjuku">Shinjuku</option>
+                <option value="Shibuya">Shibuya</option>
+                <option value="Harajuku">Harajuku</option>
+                <option value="Akihabara">Akihabara</option>
+                <option value="Roppongi">Roppongi</option>
+                <option value="Ginza">Ginza</option>
+                <option value="Ueno">Ueno</option>
+                <option value="Home">Home</option>
+            </select>
+            <!-- </datalist>   -->
+
+            <input id="button" type="button" onclick="search()" value="Search"/>
+        </form>
+
+        <img id="pin" src="none.png" alt="pin" onclick="pop()"/>
+    </div>
+
+    <div id="pop" style="overflow-x: hidden; overflow-y:scroll;">
+        <h1 id="loc">  </h1>
+        <input id="close"  type="button" onclick="close_pop()"   value="X"/>
+        <input id="switch" type="button" onclick="switch_button()" value="Switch to Machine"/>
+
+        <div id="text">
+            <p> word </p>
+        </div>
+    </div>
+</body>
+
+</html>
