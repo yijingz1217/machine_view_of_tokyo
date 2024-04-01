@@ -187,7 +187,12 @@ var locationArray = [
     {   name: "Roppongi",
         x: "1819",
         y: "1545",
-        reality: "test",
+        reality: "When talking about Roppongi, the first thing came to my mind is absolutely the Tokyo Tower. It is a pretty beautiful place, where you can see a bird view of Tokyo from there. During holidays, Tokyo Tower will also be decorated with different lights. We went during Christmas times, so the Tower also get its Christmas custom. So as the road at Roppongi Keyakizaka at Roppongi Hills. The streets are decorated with lights and you can see Tokyo Tower from there (always the best place to obverse Tokyo Tower), which is really beautiful." 
+	+ "<br><br>"
+	+ "There also locates one big Tsutaya bookstore. I don’t really been there a lot, generally because Roppongi is kinds of crowded. But I like the atmosphere there and it the bookstore is really located at a nice place."
+	+ "<br><br>"
+	+ "Another place that I can remember deep of is the Azabujuban. It’s near Roppongi, but a lot more quite and less crowded. You can always find amazing restaurants and dessert shops there. ",
+	
         machine: "Roppongi, located in the heart of Tokyo, is a vibrant and dynamic district that pulsates with energy day and night. As one of Tokyo's premier entertainment and nightlife hubs, Roppongi offers a diverse array of experiences that cater to a wide range of tastes and interests."
         + "<br><img src = \"image/roppongi_machine_1.png\" alt=\"Roppongi machine image1\" />"
         + "<br><br>"
