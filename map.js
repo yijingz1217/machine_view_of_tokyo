@@ -105,7 +105,7 @@ var locationArray = [
 ];
 
 var console_width, console_height;
-var cur = 1;
+var cur = 2;
 
 var ml, mt, mr, mb;
 var map_width, map_height;
